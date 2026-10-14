@@ -649,6 +649,14 @@ body { padding-top: 56px; }
   margin-bottom: 1rem;
 }
 
+.book-description a {
+  color: var(--cyan);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(77,184,212,0.3);
+}
+
+.book-description a:hover { border-color: var(--cyan); }
+
 /* New Book Detail Section */
 .books-list {
   display: flex;
@@ -994,6 +1002,11 @@ body { padding-top: 56px; }
   border-radius: 50%;
   object-fit: cover;
   display: block;
+}
+
+.about-page-photo {
+  float: left;
+  margin: 0.4rem 1.75rem 1rem 0;
 }
 
 .about-label {
@@ -1532,6 +1545,12 @@ body { padding-top: 56px; }
 
   .about-photo {
     margin: 0 auto;
+  }
+
+  .about-page-photo {
+    width: 110px;
+    height: 110px;
+    margin: 0.4rem 1.25rem 0.75rem 0;
   }
 
   .book-ctas {
