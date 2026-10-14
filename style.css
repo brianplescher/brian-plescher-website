@@ -649,6 +649,14 @@ body { padding-top: 56px; }
   margin-bottom: 1rem;
 }
 
+.book-description a {
+  color: var(--cyan);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(77,184,212,0.3);
+}
+
+.book-description a:hover { border-color: var(--cyan); }
+
 /* New Book Detail Section */
 .books-list {
   display: flex;
