@@ -6,8 +6,8 @@
 Brian Plescher writes essays and books on transformation, collapse, and the practice of thinking clearly in an unraveling world. He holds an M.S. in Management, Strategy, and Leadership from Michigan State University and an Executive Education Certificate in Accelerated Management from Yale School of Management.
 
 ## Books
-- [Woundwise](https://brianplescher.com/books/woundwise): Post-structuralist philosophy as lived practice. Second edition.
-- [The Directed Author](https://brianplescher.com/books/the-directed-author): Creative leadership and authorship identity in the age of AI collaboration.
+- [Woundwise](https://brianplescher.com/books/woundwise/): Post-structuralist philosophy as lived practice. Second edition.
+- [The Directed Author](https://brianplescher.com/books/the-directed-author/): Creative leadership and authorship identity in the age of AI collaboration.
 
 ## Essays
 - [Essay archive](https://brianplescher.com/essays.html)

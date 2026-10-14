@@ -16,67 +16,67 @@
 
 [[redirects]]
   from = "/woundwise"
-  to = "/books/woundwise"
+  to = "/books/woundwise/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/woundwise.html"
-  to = "/books/woundwise"
+  to = "/books/woundwise/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/woundwise-leadership"
-  to = "/books/woundwise"
+  to = "/books/woundwise/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/woundwise-leadership.html"
-  to = "/books/woundwise"
+  to = "/books/woundwise/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/leadership"
-  to = "/books/woundwise"
+  to = "/books/woundwise/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/books/woundwise.html"
-  to = "/books/woundwise"
+  to = "/books/woundwise/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/the-directed-author"
-  to = "/books/the-directed-author"
+  to = "/books/the-directed-author/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/the-directed-author.html"
-  to = "/books/the-directed-author"
+  to = "/books/the-directed-author/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/books/the-directed-author.html"
-  to = "/books/the-directed-author"
+  to = "/books/the-directed-author/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/about.html"
-  to = "/about"
+  to = "/about/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/now.html"
-  to = "/now"
+  to = "/now/"
   status = 301
   force = true
 
