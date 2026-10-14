@@ -34,6 +34,8 @@ netlify dev
 
 **Netlify Forms.** Contact, newsletter, and Slickens notify forms use `data-netlify="true"` with a hidden `form-name` input. Submissions redirect to `thankyou.html`. No backend code needed.
 
+**Analytics.** Every page loads Plausible (`plausible.io/js/pa-…js` plus an inline `plausible.init()`) just before `</head>`; copy it into new pages. The CSP in `netlify.toml` allows `https://plausible.io` in `script-src` and `connect-src`.
+
 **No server code.** There are no Netlify Functions. Don't add pages that call paid APIs from the browser.
 
 **Canonical URLs.** The canonical host is `https://brianplescher.com` (www 301s to it). Clean URLs are served from directories: `/about/`, `/now/`, `/books/woundwise/`, `/books/the-directed-author/` (each an `index.html`). Netlify 301s the no-slash form to the trailing-slash form, so always link, canonicalize and redirect to the trailing-slash URL. Use absolute paths (`/style.css`, `/books/woundwise/`) in links.
