@@ -1007,8 +1007,6 @@ body { padding-top: 56px; }
 .about-page-photo {
   float: left;
   margin: 0.4rem 1.75rem 1rem 0;
-  shape-outside: circle(50%);
-  shape-margin: 0.75rem;
 }
 
 .about-label {
