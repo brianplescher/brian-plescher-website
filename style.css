@@ -138,6 +138,26 @@ select:focus-visible {
 
 .main-nav a:hover { color: var(--cyan); }
 
+/* ── Nav dropdown (About → Media Kit) ── */
+.nav-dropdown { position: relative; }
+.main-nav .nav-dropdown > a { display: block; }
+.nav-dropdown > a::after { content: " \25BE"; }
+.nav-submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -1rem;
+  min-width: 10rem;
+  list-style: none;
+  margin: 0;
+  padding: 0.75rem 0 0.5rem;
+  background: rgba(13, 17, 23, 0.98);
+  border: 1px solid var(--border);
+}
+.nav-dropdown:hover .nav-submenu,
+.nav-dropdown:focus-within .nav-submenu { display: block; }
+.nav-submenu a { display: block; padding: 0.4rem 1rem; }
+
 /* ==================== LEGACY NAV (site-nav) ==================== */
 .site-nav {
   position: fixed;
@@ -245,6 +265,17 @@ select:focus-visible {
     border-bottom: 1px solid var(--border);
   }
   .main-nav.open { display: flex; }
+  .nav-submenu {
+    display: block;
+    position: static;
+    min-width: 0;
+    padding: 0;
+    background: none;
+    border: 0;
+  }
+  .nav-dropdown > a::after { content: none; }
+  .nav-links .nav-submenu a,
+  .main-nav .nav-submenu a { padding-left: 3rem; }
   .main-nav a {
     display: flex;
     align-items: center;
@@ -1603,3 +1634,38 @@ body { padding-top: 56px; }
 }
 
 .footer-contact a:hover { text-decoration: underline; }
+
+/* ── Media kit ── */
+.media-kit-heading {
+  font-family: 'IM Fell English', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--headline);
+  margin: 2.5rem 0 1rem;
+}
+
+.media-kit-assets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+}
+
+.media-kit-asset { margin: 0; }
+
+.media-kit-asset img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+}
+
+.media-kit-asset figcaption {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-top: 0.75rem;
+}
+
+.media-kit a,
+.media-kit-asset figcaption a { color: var(--cyan); }
