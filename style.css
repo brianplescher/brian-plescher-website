@@ -1004,6 +1004,8 @@ body { padding-top: 56px; }
   display: block;
 }
 
+.about-page-photo { margin: 1.5rem 0 2rem; }
+
 .about-label {
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
