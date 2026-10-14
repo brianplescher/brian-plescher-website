@@ -40,6 +40,12 @@ netlify dev
 
 **Canonical URLs.** The canonical host is `https://brianplescher.com` (www 301s to it). Clean URLs are served from directories: `/about/`, `/now/`, `/books/woundwise/`, `/books/the-directed-author/` (each an `index.html`). Netlify 301s the no-slash form to the trailing-slash form, so always link, canonicalize and redirect to the trailing-slash URL. Use absolute paths (`/style.css`, `/books/woundwise/`) in links.
 
+**Structured data.** Each indexable page has one JSON-LD `@graph` block in `<head>` containing the full `Person` (`https://brianplescher.com/#person`), the `WebSite` (`#website`), the page node (`<url>#webpage`) and any `Book`/`BlogPosting` nodes on that page. Books use `<book url>#book` ids and reference the author by `{"@id": ".../#person"}`. Keep the Person node identical on every page.
+
+**Footer contact.** Every footer ends with `<p class="footer-contact">Contact Brian: <a href="mailto:brian@sonexial.com">…</a></p>`.
+
+**Canonical check.** `python3 scripts/check_canonicals.py` (add `--live` after deploy) verifies every `sitemap.xml` URL has a matching canonical and `og:url`, valid JSON-LD, and that no indexable page is missing from the sitemap. `/scripts/*` is blocked with a 404 rule.
+
 ## Deployments & Redirects
 
 Deployment is automatic via Netlify on push. The publish directory is `.` (repo root).

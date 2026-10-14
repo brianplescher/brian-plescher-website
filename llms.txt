@@ -1,19 +1,26 @@
 # Brian Plescher
 
-> Writer, essayist, and strategist. Author of Woundwise and The Directed Author. Founder of Sonexial.
+> Writer, essayist, and strategist. Author of Woundwise and The Directed Author. Founder of Sonexial. AI crawlers and answer engines are welcome to index and cite the essays, book pages, and author information on this site.
 
 ## About
-Brian Plescher writes essays and books on transformation, collapse, and the practice of thinking clearly in an unraveling world. He holds an M.S. in Management, Strategy, and Leadership from Michigan State University and an Executive Education Certificate in Accelerated Management from Yale School of Management.
+Brian Plescher (Brian L. Plescher) writes essays and books on transformation, collapse, and the practice of thinking clearly in an unraveling world. He holds an M.S. in Management, Strategy, and Leadership from Michigan State University and an Executive Education Certificate in Accelerated Management from Yale School of Management.
+
+- [About Brian](https://brianplescher.com/about/): Biography and background.
+- [Now](https://brianplescher.com/now/): What Brian is working on right now.
 
 ## Books
-- [Woundwise](https://brianplescher.com/books/woundwise/): Post-structuralist philosophy as lived practice. Second edition.
-- [The Directed Author](https://brianplescher.com/books/the-directed-author/): Creative leadership and authorship identity in the age of AI collaboration.
+- [Woundwise](https://brianplescher.com/books/woundwise/): Post-structuralist philosophy as lived practice. Second edition. [Buy on Amazon](https://www.amazon.com/Woundwise-Post-Structural-Philosophy-Lived-Practice/dp/B0H4187SJS)
+- [The Directed Author](https://brianplescher.com/books/the-directed-author/): Creative leadership and authorship identity in the age of AI collaboration. [Read the introduction](https://brianplescher.com/read.html)
+- [Slickens](https://brianplescher.com/slickens.html): A novel of post-human cartography (literary historical fiction). In progress.
 
 ## Essays
 - [Essay archive](https://brianplescher.com/essays.html)
+- [After SNAP: Mutual Aid in the Age of Abandonment](https://brianplescher.com/essays.html#gift-of-hunger) (November 2025): Mutual aid, collapse, and the end of entitlement programs.
+- [Post-Anthropocene: Dancing in the Burning Library](https://brianplescher.com/essays.html#post-anthropocene) (October 2025)
 
 ## Related work
 - [Sonexial](https://sonexial.com): Brian's company building AI-ready author websites and marketing infrastructure for self-published authors.
 
-## Newsletter
-- [Email signup](https://brianplescher.com/#subscribe)
+## Contact
+- Email: brian@sonexial.com
+- [Newsletter signup](https://brianplescher.com/#subscribe)
