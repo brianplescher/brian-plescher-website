@@ -50,6 +50,7 @@ body {
   line-height: 1.7;
   overflow-x: hidden;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  padding-top: 56px;
 }
 
 main#main {
@@ -284,8 +285,6 @@ select:focus-visible {
   }
 }
 
-body { padding-top: 56px; }
-
 /* ==================== NEW HERO (Books First) ==================== */
 .hero {
   min-height: calc(100vh - 56px);
@@ -404,76 +403,6 @@ body { padding-top: 56px; }
 }
 
 /* ==================== LEGACY HERO ==================== */
-.hero-wordmark {
-  font-family: 'IM Fell English', serif;
-  font-size: 3.5rem;
-  color: var(--headline);
-  line-height: 1.1;
-  margin-bottom: 1.25rem;
-  opacity: 0;
-  transform: translateY(12px);
-  animation: fadeUp 0.6s ease forwards;
-}
-
-.hero-subhead {
-  font-family: 'Libre Baskerville', serif;
-  font-style: italic;
-  font-size: 1.1rem;
-  color: var(--muted);
-  margin-bottom: 1.5rem;
-  opacity: 0;
-  transform: translateY(12px);
-  animation: fadeUp 0.6s ease 0.15s forwards;
-}
-
-.hero-body {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 1rem;
-  color: var(--body);
-  max-width: 520px;
-  margin: 0 auto 2rem;
-  line-height: 1.8;
-  opacity: 0;
-  transform: translateY(12px);
-  animation: fadeUp 0.6s ease 0.3s forwards;
-}
-
-.hero-cta {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--cyan);
-  text-decoration: none;
-  opacity: 0;
-  transform: translateY(12px);
-  animation: fadeUp 0.6s ease 0.45s forwards;
-  transition: opacity 0.2s;
-}
-
-.hero-cta:hover { opacity: 0.8; }
-
-.scroll-indicator {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  animation: fadeUp 0.6s ease 0.8s forwards;
-  transition: opacity 0.4s;
-}
-
-.scroll-indicator.hidden { opacity: 0 !important; }
-
-.scroll-chevron {
-  width: 20px;
-  height: 20px;
-  border-right: 2px solid var(--muted);
-  border-bottom: 2px solid var(--muted);
-  transform: rotate(45deg);
-  animation: bounce 1.6s ease infinite;
-}
 
 @keyframes bounce {
   0%, 100% { transform: rotate(45deg) translateY(0); }
@@ -500,14 +429,7 @@ body { padding-top: 56px; }
   margin: 0 auto;
 }
 
-.section-full {
-  padding: 5rem 2rem;
-  width: 100%;
-}
-
-.section + .section,
-.section + .section-full,
-.section-full + .section {
+.section + .section {
   border-top: 1px solid var(--rule);
 }
 
@@ -578,11 +500,6 @@ body { padding-top: 56px; }
   align-items: start;
 }
 
-.book-grid.secondary {
-  grid-template-columns: 200px 1fr;
-  gap: 3rem;
-}
-
 .book-cover-wrap {
   position: sticky;
   top: 80px;
@@ -618,10 +535,6 @@ body { padding-top: 56px; }
   margin-bottom: 0.5rem;
 }
 
-.book-title.secondary {
-  font-size: 1.75rem;
-}
-
 .book-format {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
@@ -639,6 +552,16 @@ body { padding-top: 56px; }
   border-left: 2px solid var(--cyan);
   padding-left: 1.25rem;
   margin: 1.5rem 0;
+}
+
+.book-pullquote a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(77,184,212,0.3);
+}
+
+.book-pullquote a:hover {
+  border-color: var(--cyan);
 }
 
 .book-description {
@@ -858,41 +781,6 @@ body { padding-top: 56px; }
   opacity: 0.75;
 }
 
-.essays-minimal {
-  text-align: center;
-  padding: 4rem 2rem;
-  max-width: 580px;
-  margin: 0 auto;
-}
-
-.essays-minimal h2 {
-  font-family: 'IM Fell English', serif;
-  font-size: 2rem;
-  color: var(--headline);
-  margin-bottom: 1rem;
-}
-
-.essays-minimal p {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 15px;
-  color: var(--muted);
-  line-height: 1.75;
-  margin-bottom: 1.5rem;
-}
-
-.essays-link {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--cyan);
-  text-decoration: none;
-  transition: opacity 0.2s;
-}
-
-.essays-link:hover { opacity: 0.75; }
-
 /* ==================== SONEXIAL SECTION ==================== */
 .sonexial-section {
   background: var(--surface);
@@ -908,28 +796,6 @@ body { padding-top: 56px; }
 
 .sonexial-section a:hover {
   border-color: var(--cyan);
-}
-
-/* ==================== NOW SECTION ==================== */
-.now-list {
-  list-style: none;
-  margin: 1.5rem 0;
-}
-
-.now-list li {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 15px;
-  color: var(--body);
-  padding: 0.5rem 0;
-  padding-left: 1.25rem;
-  position: relative;
-}
-
-.now-list li::before {
-  content: '—';
-  position: absolute;
-  left: 0;
-  color: var(--cyan);
 }
 
 /* ==================== SUBSCRIBE SECTION ==================== */
@@ -989,12 +855,6 @@ body { padding-top: 56px; }
 }
 
 /* ==================== ABOUT SECTION ==================== */
-.about-section {
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 3rem;
-  align-items: start;
-}
 
 .about-photo {
   width: 140px;
@@ -1007,31 +867,6 @@ body { padding-top: 56px; }
 .about-page-photo {
   float: left;
   margin: 0.4rem 1.75rem 1rem 0;
-}
-
-.about-label {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--cyan);
-  margin-bottom: 0.5rem;
-}
-
-.about-name {
-  font-family: 'IM Fell English', serif;
-  font-size: 1.75rem;
-  color: var(--headline);
-  margin-bottom: 1.25rem;
-}
-
-.about-body {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 15px;
-  color: var(--body);
-  line-height: 1.8;
-  margin-bottom: 1rem;
 }
 
 /* ==================== CONTACT / FORMS ==================== */
@@ -1059,61 +894,6 @@ body { padding-top: 56px; }
   color: var(--muted);
   margin-bottom: 2rem;
 }
-
-.form-group {
-  margin-bottom: 1.25rem;
-}
-
-.form-group label {
-  display: block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 11px;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 6px;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 12px 14px;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 2px;
-  color: var(--body);
-  font-family: 'Libre Baskerville', serif;
-  font-size: 14px;
-  outline: none;
-  transition: border-color 0.2s;
-  min-height: 44px;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: var(--cyan);
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: var(--muted);
-}
-
-.form-group textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-.form-error {
-  color: var(--error);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 11px;
-  margin-top: 4px;
-  display: none;
-}
-
-.form-error.visible { display: block; }
 
 .email-form {
   display: flex;
@@ -1157,22 +937,6 @@ body { padding-top: 56px; }
 }
 
 .email-form button:hover { background: var(--cyan-light); }
-
-.newsletter-section {
-  margin-top: 3rem;
-  padding-top: 2.5rem;
-  border-top: 1px solid var(--rule);
-}
-
-.newsletter-label {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--cyan);
-  margin-bottom: 0.5rem;
-}
 
 .newsletter-body {
   font-family: 'Libre Baskerville', serif;
@@ -1275,59 +1039,6 @@ body { padding-top: 56px; }
   color: var(--border);
 }
 
-/* ==================== PROMO BAND ==================== */
-.promo-band {
-  background: var(--surface-raised);
-  border-bottom: 1px solid var(--border);
-  padding: 0.75rem 2rem;
-  text-align: center;
-}
-
-.promo-band a {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.08em;
-  color: var(--cyan);
-  text-decoration: none;
-  transition: opacity 0.2s;
-}
-
-.promo-band a:hover { opacity: 0.75; }
-
-/* ==================== PAGE HEADERS ==================== */
-.page-header {
-  padding: 4rem 2rem 3rem;
-  max-width: var(--max-width-content);
-  margin: 0 auto;
-  border-bottom: 1px solid var(--rule);
-}
-
-.page-label {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--cyan);
-  margin-bottom: 0.75rem;
-}
-
-.page-title {
-  font-family: 'IM Fell English', serif;
-  font-size: clamp(2rem, 5vw, 3rem);
-  color: var(--headline);
-  line-height: 1.15;
-  margin-bottom: 0.5rem;
-}
-
-.page-subtitle {
-  font-family: 'IM Fell English', serif;
-  font-style: italic;
-  font-size: 1.1rem;
-  color: var(--muted);
-}
-
 /* ==================== ESSAYS PAGE ==================== */
 .essays-header {
   padding: 4rem 2rem 2rem;
@@ -1419,56 +1130,7 @@ body { padding-top: 56px; }
 
 .back-to-top-link:hover { color: var(--cyan); }
 
-/* ==================== CHAPTER LIST ==================== */
-.chapter-list {
-  list-style: none;
-  padding: 0;
-  margin: 1.5rem 0;
-}
-
-.chapter-list li {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 14px;
-  color: var(--body);
-  padding: 0.6rem 0;
-  border-bottom: 1px solid var(--rule);
-  display: flex;
-  align-items: baseline;
-  gap: 0.75rem;
-}
-
-.chapter-list li:last-child { border-bottom: none; }
-
-.chapter-num {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  color: var(--cyan);
-  min-width: 2rem;
-}
-
 /* ==================== SLICKENS PAGE ==================== */
-.slickens-section {
-  background: var(--surface);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-
-.slickens-inner {
-  max-width: 580px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 5rem 2rem;
-}
-
-.slickens-title {
-  font-family: 'IM Fell English', serif;
-  font-size: 3rem;
-  color: var(--headline);
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.02em;
-}
 
 .slickens-page {
   min-height: calc(100vh - 56px);
@@ -1515,18 +1177,12 @@ body { padding-top: 56px; }
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-  .hero-wordmark, .hero-subhead, .hero-body, .hero-cta, .scroll-indicator {
-    opacity: 1;
-    transform: none;
-    animation: none;
-  }
   .fade-in { opacity: 1; transform: none; }
 }
 
 /* ==================== RESPONSIVE ==================== */
 @media (max-width: 768px) {
-  .book-grid,
-  .book-grid.secondary {
+  .book-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
@@ -1535,12 +1191,6 @@ body { padding-top: 56px; }
     position: static;
     max-width: 220px;
     margin: 0 auto;
-  }
-
-  .about-section {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    text-align: center;
   }
 
   .about-photo {
@@ -1577,13 +1227,7 @@ body { padding-top: 56px; }
     border-radius: 0 0 2px 2px;
   }
 
-  .hero-wordmark { font-size: 2.2rem; }
-
-  .section, .section-narrow, .section-full {
-    padding: 3rem 1.25rem;
-  }
-
-  .slickens-inner {
+  .section, .section-narrow {
     padding: 3rem 1.25rem;
   }
 
@@ -1688,3 +1332,8 @@ body { padding-top: 56px; }
 
 .media-kit a,
 .media-kit-asset figcaption a { color: var(--cyan); }
+
+/* ── Shared modifiers (replace repeated inline styles) ── */
+.footer-tagline a { color: inherit; text-decoration: none; }
+.buy-block { text-align: center; }
+.buy-block .book-ctas { justify-content: center; }

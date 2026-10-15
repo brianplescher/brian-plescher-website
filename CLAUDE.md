@@ -40,7 +40,7 @@ netlify dev
 
 **No server code.** There are no Netlify Functions. Don't add pages that call paid APIs from the browser.
 
-**Canonical URLs.** The canonical host is `https://brianplescher.com` (www 301s to it). Clean URLs are served from directories: `/about/`, `/now/`, `/books/woundwise/`, `/books/the-directed-author/` (each an `index.html`). Netlify 301s the no-slash form to the trailing-slash form, so always link, canonicalize and redirect to the trailing-slash URL. Use absolute paths (`/style.css`, `/books/woundwise/`) in links.
+**Canonical URLs.** The canonical host is `https://brianplescher.com` (www 301s to it). Clean URLs are served from directories: `/about/`, `/books/woundwise/`, `/books/the-directed-author/` (each an `index.html`). Netlify 301s the no-slash form to the trailing-slash form, so always link, canonicalize and redirect to the trailing-slash URL. Use absolute paths (`/style.css`, `/books/woundwise/`) in links.
 
 **Structured data.** Each indexable page has one JSON-LD `@graph` block in `<head>` containing the full `Person` (`https://brianplescher.com/#person`), the `WebSite` (`#website`), the page node (`<url>#webpage`) and any `Book`/`BlogPosting` nodes on that page. Books use `<book url>#book` ids and reference the author by `{"@id": ".../#person"}`. Keep the Person node identical on every page.
 
