@@ -26,7 +26,7 @@ netlify dev
 
 **No templating.** Every page is a standalone `.html` file. The nav and footer HTML are copy-pasted across all pages. When adding or changing nav items, update every page individually.
 
-**About dropdown.** In every main nav, About is a `.nav-dropdown` with a `.nav-submenu` holding Media Kit (`/media-kit/`). It opens on hover/focus on desktop (CSS only) and is always expanded inside the mobile menu. `read.html` has its own inline copy of these styles.
+**About dropdown.** In every main nav, About is a `.nav-dropdown` with a `.nav-submenu` holding Bio (`/about/`) and Media Kit (`/media-kit/`). It opens on hover/focus on desktop (CSS only) and is always expanded inside the mobile menu. `read.html` has its own inline copy of these styles.
 
 **Single stylesheet.** All styles live in `style.css`, organized with section comments. The design system is defined entirely via CSS custom properties in `:root` — use these variables rather than hardcoding values:
 - Colors: `--bg`, `--surface`, `--cyan`, `--headline`, `--body`, `--muted`, `--border`
