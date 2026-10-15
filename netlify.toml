@@ -76,7 +76,19 @@
 
 [[redirects]]
   from = "/now.html"
-  to = "/now/"
+  to = "/about/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/now"
+  to = "/about/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/now/*"
+  to = "/about/"
   status = 301
   force = true
 

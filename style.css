@@ -788,28 +788,6 @@ select:focus-visible {
   border-color: var(--cyan);
 }
 
-/* ==================== NOW SECTION ==================== */
-.now-list {
-  list-style: none;
-  margin: 1.5rem 0;
-}
-
-.now-list li {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 15px;
-  color: var(--body);
-  padding: 0.5rem 0;
-  padding-left: 1.25rem;
-  position: relative;
-}
-
-.now-list li::before {
-  content: '—';
-  position: absolute;
-  left: 0;
-  color: var(--cyan);
-}
-
 /* ==================== SUBSCRIBE SECTION ==================== */
 .subscribe-section {
   background: var(--surface);
@@ -1347,6 +1325,5 @@ select:focus-visible {
 
 /* ── Shared modifiers (replace repeated inline styles) ── */
 .footer-tagline a { color: inherit; text-decoration: none; }
-.now-heading { font-size: 1.5rem; }
 .buy-block { text-align: center; }
 .buy-block .book-ctas { justify-content: center; }
